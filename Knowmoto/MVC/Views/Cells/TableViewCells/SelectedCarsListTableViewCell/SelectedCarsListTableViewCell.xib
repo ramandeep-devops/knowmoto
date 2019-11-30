@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa-Bold.otf">
+            <string>Nexa-Bold</string>
+        </array>
+        <array key="Nexa-Light.otf">
+            <string>Nexa-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelectedCarsListTableViewCell" rowHeight="169" id="KGk-i7-Jjw" customClass="SelectedCarsListTableViewCell" customModule="Knowmoto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="486" height="169"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="486" height="168.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Sc-h1-3xp" customClass="KnowmotoUIImageView" customModule="Knowmoto" customModuleProvider="target">
+                        <rect key="frame" x="16" y="56.5" width="56" height="56"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="bwp-nz-8q5"/>
+                            <constraint firstAttribute="width" constant="56" id="tZi-0I-yiU"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLb-6v-UIB">
+                        <rect key="frame" x="88" y="62" width="382" height="45"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dAz-77-mIQ">
+                                <rect key="frame" x="0.0" y="0.0" width="257" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Tesla" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXf-PW-olt">
+                                        <rect key="frame" x="0.0" y="0.0" width="34.5" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="2dW-2c-LdH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Nexa-Bold" family="Nexa" pointSize="14"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="3 Models Selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="zgp-i0-C2W">
+                                        <rect key="frame" x="0.0" y="32" width="114" height="13"/>
+                                        <fontDescription key="fontDescription" name="Nexa-Light" family="Nexa" pointSize="13"/>
+                                        <color key="textColor" name="SubtitleLightGrayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHT-sU-3jq">
+                                <rect key="frame" x="257" y="0.0" width="125" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="kSM-Tx-Ew7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nexa-Bold" family="Nexa" pointSize="13"/>
+                                <state key="normal" title="Select Models">
+                                    <color key="titleColor" name="HighlightSkyBlueColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRl-Qb-c0G">
+                        <rect key="frame" x="16" y="168" width="470" height="0.5"/>
+                        <color key="backgroundColor" name="BackGroundHeaderColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.40000000000000002" id="iuy-Mp-uwd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="BackroundRustColor"/>
+                <constraints>
+                    <constraint firstItem="bRl-Qb-c0G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="1mL-A9-QhE"/>
+                    <constraint firstItem="PLb-6v-UIB" firstAttribute="leading" secondItem="5Sc-h1-3xp" secondAttribute="trailing" constant="16" id="5ya-QW-qGc"/>
+                    <constraint firstAttribute="trailing" secondItem="bRl-Qb-c0G" secondAttribute="trailing" id="EtB-j3-dQo"/>
+                    <constraint firstItem="PLb-6v-UIB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Gfa-cg-dYy"/>
+                    <constraint firstAttribute="bottom" secondItem="bRl-Qb-c0G" secondAttribute="bottom" id="P0g-9Z-e1h"/>
+                    <constraint firstAttribute="trailing" secondItem="PLb-6v-UIB" secondAttribute="trailing" constant="16" id="kKE-jX-2Iv"/>
+                    <constraint firstItem="5Sc-h1-3xp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mVx-x2-O5y"/>
+                    <constraint firstItem="5Sc-h1-3xp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="pjs-cE-YC9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnSelectModel" destination="XHT-sU-3jq" id="q1l-NC-cnh"/>
+                <outlet property="imageViewBrand" destination="5Sc-h1-3xp" id="PpO-w1-A11"/>
+                <outlet property="lblBrandName" destination="fXf-PW-olt" id="JVM-rv-8BI"/>
+                <outlet property="lblModelsSelected" destination="zgp-i0-C2W" id="Z5M-EF-o9V"/>
+            </connections>
+            <point key="canvasLocation" x="76.799999999999997" y="-5.8470764617691158"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="BackGroundHeaderColor">
+            <color red="0.11999999731779099" green="0.15999999642372131" blue="0.2199999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackroundRustColor">
+            <color red="0.20999999344348907" green="0.25" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="HighlightSkyBlueColor">
+            <color red="0.12999999523162842" green="0.85000002384185791" blue="0.82999998331069946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SubtitleLightGrayColor">
+            <color red="1" green="1" blue="1" alpha="0.66600000858306885" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

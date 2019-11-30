@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa-Bold.otf">
+            <string>Nexa-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddMoreButtonCollectionReusableView" id="7k0-vT-ekQ" customClass="AddMoreButtonCollectionReusableView" customModule="Knowmoto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6vX-hu-nAP">
+                    <rect key="frame" x="0.0" y="0.0" width="386" height="74"/>
+                    <subviews>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sz-ys-gij">
+                            <rect key="frame" x="16" y="0.0" width="356" height="0.5"/>
+                            <color key="backgroundColor" name="BackGroundHeaderColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="Aez-dq-wd3"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9n-lf-11c" customClass="KnomotButton" customModule="Knowmoto" customModuleProvider="target">
+                            <rect key="frame" x="16" y="21" width="182" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="ZD9-Di-ZKZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nexa-Bold" family="Nexa" pointSize="14"/>
+                            <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                            <state key="normal" title="+ Add another beacon">
+                                <color key="titleColor" name="HighlightSkyBlueColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cRadius">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="bColor">
+                                    <color key="value" name="HighlightSkyBlueColor"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="bWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="R9n-lf-11c" firstAttribute="leading" secondItem="6vX-hu-nAP" secondAttribute="leading" constant="16" id="Dfg-Ve-TbK"/>
+                        <constraint firstItem="R9n-lf-11c" firstAttribute="centerY" secondItem="6vX-hu-nAP" secondAttribute="centerY" id="Ih6-tN-Grf"/>
+                        <constraint firstItem="1sz-ys-gij" firstAttribute="leading" secondItem="6vX-hu-nAP" secondAttribute="leading" constant="16" id="Rr1-LI-HRp"/>
+                        <constraint firstAttribute="trailing" secondItem="1sz-ys-gij" secondAttribute="trailing" constant="14" id="gaO-Lp-6OP"/>
+                        <constraint firstItem="1sz-ys-gij" firstAttribute="top" secondItem="6vX-hu-nAP" secondAttribute="top" id="tkw-gW-bNf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6vX-hu-nAP" secondAttribute="bottom" id="BL8-Xw-pCh"/>
+                <constraint firstItem="6vX-hu-nAP" firstAttribute="leading" secondItem="7k0-vT-ekQ" secondAttribute="leading" id="WqM-U3-m2c"/>
+                <constraint firstItem="6vX-hu-nAP" firstAttribute="top" secondItem="7k0-vT-ekQ" secondAttribute="top" id="ex1-Jy-JS2"/>
+                <constraint firstItem="Ew5-iU-b10" firstAttribute="trailing" secondItem="6vX-hu-nAP" secondAttribute="trailing" id="zO8-3Q-8Bl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Ew5-iU-b10"/>
+            <point key="canvasLocation" x="89.599999999999994" y="-337.33133433283359"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <namedColor name="BackGroundHeaderColor">
+            <color red="0.11999999731779099" green="0.15999999642372131" blue="0.2199999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="HighlightSkyBlueColor">
+            <color red="0.12999999523162842" green="0.85000002384185791" blue="0.82999998331069946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa-Bold.otf">
+            <string>Nexa-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SponsorCollectionViewCell" id="BR1-Up-NKz" customClass="SponsorCollectionViewCell" customModule="Knowmoto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="271"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="271"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ll6-AH-mH5">
+                        <rect key="frame" x="2" y="6" width="348" height="225"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O33-GS-7WK" customClass="KnowmotoUIImageView" customModule="Knowmoto" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="348" height="225"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enablePhotoSelctionButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_Live_tag" translatesAutoresizingMaskIntoConstraints="NO" id="tQs-tb-9hu">
+                                <rect key="frame" x="292" y="8" width="48" height="19"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLT-MI-PM1">
+                                <rect key="frame" x="307" y="16" width="25" height="24"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="ic_trophy_outline"/>
+                                <state key="selected" image="ic_trophy_fill"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O33-GS-7WK" firstAttribute="leading" secondItem="Ll6-AH-mH5" secondAttribute="leading" id="6yb-ve-KwV"/>
+                            <constraint firstAttribute="trailing" secondItem="MLT-MI-PM1" secondAttribute="trailing" constant="16" id="Bif-eS-loP"/>
+                            <constraint firstAttribute="trailing" secondItem="O33-GS-7WK" secondAttribute="trailing" id="EYL-66-Jdn"/>
+                            <constraint firstItem="O33-GS-7WK" firstAttribute="top" secondItem="Ll6-AH-mH5" secondAttribute="top" id="GfD-yj-Wsm"/>
+                            <constraint firstItem="MLT-MI-PM1" firstAttribute="top" secondItem="Ll6-AH-mH5" secondAttribute="top" constant="16" id="Iwl-Rq-cjv"/>
+                            <constraint firstItem="tQs-tb-9hu" firstAttribute="top" secondItem="Ll6-AH-mH5" secondAttribute="top" constant="8" id="N5l-fM-8Fo"/>
+                            <constraint firstAttribute="trailing" secondItem="tQs-tb-9hu" secondAttribute="trailing" constant="8" id="iFa-Ko-EpG"/>
+                            <constraint firstAttribute="bottom" secondItem="O33-GS-7WK" secondAttribute="bottom" id="v13-Jc-squ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYg-bA-zKr">
+                        <rect key="frame" x="334" y="-2" width="24" height="24"/>
+                        <state key="normal" image="ic_delete"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="243 cars are live right now. Locate them." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQF-T3-tOj">
+                        <rect key="frame" x="2" y="239" width="348" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="snZ-rk-6b8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Nexa-Bold" family="Nexa" pointSize="12"/>
+                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" name="BackroundRustColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ll6-AH-mH5" secondAttribute="trailing" constant="4" id="30V-vv-Scg"/>
+                <constraint firstAttribute="bottom" secondItem="uQF-T3-tOj" secondAttribute="bottom" constant="8" id="7m6-ji-Ky6"/>
+                <constraint firstItem="rYg-bA-zKr" firstAttribute="trailing" secondItem="Ll6-AH-mH5" secondAttribute="trailing" constant="8" id="AjE-Y8-pms"/>
+                <constraint firstItem="Ll6-AH-mH5" firstAttribute="top" secondItem="BR1-Up-NKz" secondAttribute="top" constant="6" id="Bj4-ls-94H"/>
+                <constraint firstItem="uQF-T3-tOj" firstAttribute="trailing" secondItem="O33-GS-7WK" secondAttribute="trailing" id="Kyp-zO-byc"/>
+                <constraint firstItem="uQF-T3-tOj" firstAttribute="top" secondItem="Ll6-AH-mH5" secondAttribute="bottom" constant="8" id="UeQ-o0-4KW"/>
+                <constraint firstItem="uQF-T3-tOj" firstAttribute="leading" secondItem="O33-GS-7WK" secondAttribute="leading" id="hkF-VO-2fi"/>
+                <constraint firstItem="Ll6-AH-mH5" firstAttribute="leading" secondItem="BR1-Up-NKz" secondAttribute="leading" constant="2" id="vV0-fQ-lFq"/>
+                <constraint firstItem="rYg-bA-zKr" firstAttribute="top" secondItem="Ll6-AH-mH5" secondAttribute="top" constant="-8" id="z9k-Sf-N3R"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Xl3-KW-XOX"/>
+            <size key="customSize" width="354" height="271"/>
+            <connections>
+                <outlet property="btnLike" destination="MLT-MI-PM1" id="7bP-ni-mgE"/>
+                <outlet property="btnRemove" destination="rYg-bA-zKr" id="qh4-sS-5lD"/>
+                <outlet property="imageViewLiveTag" destination="tQs-tb-9hu" id="aar-up-Guq"/>
+                <outlet property="imageViewSponsor" destination="O33-GS-7WK" id="2t2-cI-GLL"/>
+                <outlet property="lblName" destination="uQF-T3-tOj" id="HIl-yS-ZnA"/>
+            </connections>
+            <point key="canvasLocation" x="73.599999999999994" y="89.505247376311857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_Live_tag" width="48" height="19"/>
+        <image name="ic_delete" width="24" height="24"/>
+        <image name="ic_trophy_fill" width="25" height="24"/>
+        <image name="ic_trophy_outline" width="25" height="24"/>
+        <namedColor name="BackroundRustColor">
+            <color red="0.20999999344348907" green="0.25" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

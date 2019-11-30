@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa-XBold.otf">
+            <string>Nexa-XBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TextCollectionViewReusableView" id="U6b-Vx-4bR" customClass="TextCollectionViewReusableView" customModule="Knowmoto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D9f-5Y-yAf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car sponsers added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9P-be-wKI">
+                            <rect key="frame" x="0.0" y="18" width="156" height="16"/>
+                            <fontDescription key="fontDescription" name="Nexa-XBold" family="Nexa" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="A9P-be-wKI" firstAttribute="leading" secondItem="D9f-5Y-yAf" secondAttribute="leading" id="Fw8-7D-BYt"/>
+                        <constraint firstAttribute="bottom" secondItem="A9P-be-wKI" secondAttribute="bottom" constant="16" id="gms-y3-dIL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="D9f-5Y-yAf" secondAttribute="trailing" id="8sy-rN-6t4"/>
+                <constraint firstItem="D9f-5Y-yAf" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Kc1-MU-6gJ"/>
+                <constraint firstAttribute="bottom" secondItem="D9f-5Y-yAf" secondAttribute="bottom" id="L2P-kT-owy"/>
+                <constraint firstItem="D9f-5Y-yAf" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="rAr-Ne-KsL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+        </collectionReusableView>
+    </objects>
+</document>

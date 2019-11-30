@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>307555079590-7kpd144hi1ug29m5iabl555d2e59273j.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.307555079590-7kpd144hi1ug29m5iabl555d2e59273j</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCizFoENjFOZkfA82xOBEU-zJ5bZ2QtEo0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>307555079590</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.bridge-below.knowmoto</string>
+	<key>PROJECT_ID</key>
+	<string>knowmoto-5cd3f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>knowmoto-5cd3f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:307555079590:ios:6eb4e98f20832f111eeb67</string>
+	<key>DATABASE_URL</key>
+	<string>https://knowmoto-5cd3f.firebaseio.com</string>
+</dict>
+</plist>

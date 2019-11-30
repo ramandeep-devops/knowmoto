@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa-Bold.otf">
+            <string>Nexa-Bold</string>
+        </array>
+        <array key="Nexa-Book.otf">
+            <string>Nexa-Book</string>
+        </array>
+        <array key="Nexa-XBold.otf">
+            <string>Nexa-XBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddModificationPopUp" customModule="Knowmoto" customModuleProvider="target">
+            <connections>
+                <outlet property="textFieldBrand" destination="KKp-TG-hdv" id="zVG-6Y-hp7"/>
+                <outlet property="textFieldCategory" destination="7OX-0d-arn" id="XCC-MS-3Ds"/>
+                <outlet property="textFieldPart" destination="s3c-1f-mAM" id="AqP-cR-dPU"/>
+                <outlet property="textFieldPartNo" destination="m3p-g1-OtF" id="UXl-3B-Upd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Cgu-yd-x4S">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="444"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqU-fH-TP4">
+                    <rect key="frame" x="0.0" y="0.0" width="341" height="444"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3P3-bk-toX">
+                            <rect key="frame" x="32" y="32" width="277" height="28"/>
+                            <attributedString key="attributedText">
+                                <fragment content=" Modification Details">
+                                    <attributes>
+                                        <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="16" name="Nexa-XBold"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Ypq-E6-GjS">
+                            <rect key="frame" x="16" y="92" width="309" height="320"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="677-XR-cZe">
+                                    <rect key="frame" x="0.0" y="0.0" width="309" height="240"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZ5-K7-08m">
+                                            <rect key="frame" x="0.0" y="0.0" width="309" height="48"/>
+                                            <subviews>
+                                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" text="Select a category" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7OX-0d-arn" customClass="KnowMotoTextField" customModule="Knowmoto" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="309" height="48"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="odv-Hv-sLK"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="Nexa-Bold" family="Nexa" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="next"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                            <color key="value" name="SubtitleLightGrayColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmK-SF-Ru8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="309" height="48"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="16" maxY="0.0"/>
+                                                    <state key="normal" image="ic_down"/>
+                                                    <connections>
+                                                        <action selector="didSelectCategory:" destination="-1" eventType="touchUpInside" id="z27-0S-D0s"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="FtL-cZ-Vg7"/>
+                                                <constraint firstItem="7OX-0d-arn" firstAttribute="leading" secondItem="NZ5-K7-08m" secondAttribute="leading" id="GAM-Pw-fpl"/>
+                                                <constraint firstAttribute="bottom" secondItem="7OX-0d-arn" secondAttribute="bottom" id="M8c-y9-BmT"/>
+                                                <constraint firstItem="EmK-SF-Ru8" firstAttribute="leading" secondItem="NZ5-K7-08m" secondAttribute="leading" id="OPY-EI-ynW"/>
+                                                <constraint firstAttribute="bottom" secondItem="EmK-SF-Ru8" secondAttribute="bottom" id="TNS-iX-76B"/>
+                                                <constraint firstItem="EmK-SF-Ru8" firstAttribute="top" secondItem="NZ5-K7-08m" secondAttribute="top" id="gKp-sH-4lS"/>
+                                                <constraint firstItem="7OX-0d-arn" firstAttribute="top" secondItem="NZ5-K7-08m" secondAttribute="top" id="lyp-6y-hVK"/>
+                                                <constraint firstAttribute="trailing" secondItem="7OX-0d-arn" secondAttribute="trailing" id="tMJ-Io-8rM"/>
+                                                <constraint firstAttribute="trailing" secondItem="EmK-SF-Ru8" secondAttribute="trailing" id="uYy-bd-oqa"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oox-xP-V1s">
+                                            <rect key="frame" x="0.0" y="64" width="309" height="48"/>
+                                            <subviews>
+                                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" text="Select Brand" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KKp-TG-hdv" customClass="KnowMotoTextField" customModule="Knowmoto" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="309" height="48"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="cF5-lO-kS1"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="Nexa-Book" family="Nexa" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="next"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                            <color key="value" name="SubtitleLightGrayColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiE-aa-7cF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="309" height="48"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                                    <state key="normal" image="ic_fwd"/>
+                                                    <connections>
+                                                        <action selector="didSelectBrand:" destination="-1" eventType="touchUpInside" id="Ywx-Pb-UoD"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="jiE-aa-7cF" secondAttribute="trailing" id="5CM-3x-A7P"/>
+                                                <constraint firstItem="KKp-TG-hdv" firstAttribute="leading" secondItem="Oox-xP-V1s" secondAttribute="leading" id="E1w-3h-YVZ"/>
+                                                <constraint firstAttribute="height" constant="48" id="Vyf-d4-dvQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="KKp-TG-hdv" secondAttribute="trailing" id="fGP-y2-Ukv"/>
+                                                <constraint firstAttribute="bottom" secondItem="jiE-aa-7cF" secondAttribute="bottom" id="hTU-IA-b89"/>
+                                                <constraint firstAttribute="bottom" secondItem="KKp-TG-hdv" secondAttribute="bottom" id="hta-ZS-HP4"/>
+                                                <constraint firstItem="KKp-TG-hdv" firstAttribute="top" secondItem="Oox-xP-V1s" secondAttribute="top" id="nvG-dk-E2V"/>
+                                                <constraint firstItem="jiE-aa-7cF" firstAttribute="leading" secondItem="Oox-xP-V1s" secondAttribute="leading" id="oqc-5r-GK8"/>
+                                                <constraint firstItem="jiE-aa-7cF" firstAttribute="top" secondItem="Oox-xP-V1s" secondAttribute="top" id="vj1-OB-f6P"/>
+                                            </constraints>
+                                        </view>
+                                        <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Part Number e.g 4560" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m3p-g1-OtF" customClass="KnowMotoTextField" customModule="Knowmoto" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="128" width="309" height="48"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="4Aq-o2-v6C"/>
+                                            </constraints>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Nexa-Book" family="Nexa" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="next"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                    <color key="value" name="SubtitleLightGrayColor"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Part e.g Holley 750" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s3c-1f-mAM" customClass="KnowMotoTextField" customModule="Knowmoto" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="192" width="309" height="48"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="Hyj-k1-MS4"/>
+                                            </constraints>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Nexa-Book" family="Nexa" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="next"/>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Cl0-3L-tO2">
+                                    <rect key="frame" x="0.0" y="272" width="309" height="48"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSj-oK-o7z" customClass="KnomotButton" customModule="Knowmoto" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="146.5" height="48"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="Id5-kr-k92"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Nexa-XBold" family="Nexa" pointSize="14"/>
+                                            <state key="normal" title="Cancel">
+                                                <color key="titleColor" name="BlueColor"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="enableButton" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cRadius">
+                                                    <real key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="bWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="bColor">
+                                                    <color key="value" name="BlueColor"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="didTapCancel:" destination="-1" eventType="touchUpInside" id="tN9-ym-rLp"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEv-Ew-oFx" customClass="KnomotButton" customModule="Knowmoto" customModuleProvider="target">
+                                            <rect key="frame" x="162.5" y="0.0" width="146.5" height="48"/>
+                                            <color key="backgroundColor" name="BlueColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="deL-BF-Rlu"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Nexa-XBold" family="Nexa" pointSize="14"/>
+                                            <state key="normal" title="Done">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="enableButton" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cRadius">
+                                                    <real key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="didTapDone:" destination="-1" eventType="touchUpInside" id="qrA-Hb-WJb"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="BackgroundLightRustColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Ypq-E6-GjS" secondAttribute="trailing" constant="16" id="Apr-Wa-S9t"/>
+                        <constraint firstItem="3P3-bk-toX" firstAttribute="leading" secondItem="EqU-fH-TP4" secondAttribute="leading" constant="32" id="Fcc-2U-JwW"/>
+                        <constraint firstItem="Ypq-E6-GjS" firstAttribute="top" secondItem="3P3-bk-toX" secondAttribute="bottom" constant="32" id="Gf4-pa-azk"/>
+                        <constraint firstAttribute="trailing" secondItem="3P3-bk-toX" secondAttribute="trailing" constant="32" id="JBT-gi-jA5"/>
+                        <constraint firstItem="3P3-bk-toX" firstAttribute="top" secondItem="EqU-fH-TP4" secondAttribute="top" constant="32" id="ZRs-Dl-x1F"/>
+                        <constraint firstItem="Ypq-E6-GjS" firstAttribute="leading" secondItem="EqU-fH-TP4" secondAttribute="leading" constant="16" id="bcx-Io-vfO"/>
+                        <constraint firstAttribute="bottom" secondItem="Ypq-E6-GjS" secondAttribute="bottom" constant="32" id="ltj-JP-FLq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Zay-5v-Ycz" firstAttribute="trailing" secondItem="EqU-fH-TP4" secondAttribute="trailing" id="NFi-ZE-rQB"/>
+                <constraint firstItem="EqU-fH-TP4" firstAttribute="leading" secondItem="Zay-5v-Ycz" secondAttribute="leading" id="SN7-Nj-vzl"/>
+                <constraint firstItem="Zay-5v-Ycz" firstAttribute="bottom" secondItem="EqU-fH-TP4" secondAttribute="bottom" id="gYc-jB-GoQ"/>
+                <constraint firstItem="EqU-fH-TP4" firstAttribute="top" secondItem="Zay-5v-Ycz" secondAttribute="top" id="nz4-50-YV7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Zay-5v-Ycz"/>
+            <point key="canvasLocation" x="180" y="121.4392803598201"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_down" width="10" height="7"/>
+        <image name="ic_fwd" width="24" height="24"/>
+        <namedColor name="BackgroundLightRustColor">
+            <color red="0.27000001072883606" green="0.31999999284744263" blue="0.37000000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BlueColor">
+            <color red="0.28999999165534973" green="0.57999998331069946" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SubtitleLightGrayColor">
+            <color red="1" green="1" blue="1" alpha="0.66600000858306885" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa-Bold.otf">
+            <string>Nexa-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarsCollectionViewCell" id="gTV-IL-0wX" customClass="CarsCollectionViewCell" customModule="Knowmoto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="271"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="271"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u98-V8-5tY">
+                        <rect key="frame" x="2" y="2" width="350" height="229"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="klT-Ww-ku1" customClass="KnowmotoUIImageView" customModule="Knowmoto" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="229"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enablePhotoSelctionButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnx-WB-9Zg">
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="229"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_selected_white" translatesAutoresizingMaskIntoConstraints="NO" id="YcT-9L-MnY">
+                                <rect key="frame" x="316" y="10" width="22" height="22"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_beacon" translatesAutoresizingMaskIntoConstraints="NO" id="Rql-oS-7nh">
+                                <rect key="frame" x="310" y="189" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="B0A-6t-Fwq"/>
+                                    <constraint firstAttribute="width" constant="32" id="Mq4-8X-25S"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="klT-Ww-ku1" secondAttribute="bottom" id="7g6-w7-dos"/>
+                            <constraint firstAttribute="trailing" secondItem="klT-Ww-ku1" secondAttribute="trailing" id="OYr-rr-bnh"/>
+                            <constraint firstAttribute="trailing" secondItem="Rql-oS-7nh" secondAttribute="trailing" constant="8" id="R7a-4Z-gGT"/>
+                            <constraint firstAttribute="bottom" secondItem="pnx-WB-9Zg" secondAttribute="bottom" id="YeX-6f-sSE"/>
+                            <constraint firstItem="klT-Ww-ku1" firstAttribute="leading" secondItem="u98-V8-5tY" secondAttribute="leading" id="bcb-rr-yCh"/>
+                            <constraint firstItem="YcT-9L-MnY" firstAttribute="top" secondItem="u98-V8-5tY" secondAttribute="top" constant="10" id="hHc-SG-X2s"/>
+                            <constraint firstAttribute="trailing" secondItem="pnx-WB-9Zg" secondAttribute="trailing" id="lDm-Uv-6jh"/>
+                            <constraint firstAttribute="bottom" secondItem="Rql-oS-7nh" secondAttribute="bottom" constant="8" id="qsD-sy-RKa"/>
+                            <constraint firstItem="pnx-WB-9Zg" firstAttribute="top" secondItem="u98-V8-5tY" secondAttribute="top" id="rKf-OV-g91"/>
+                            <constraint firstItem="klT-Ww-ku1" firstAttribute="top" secondItem="u98-V8-5tY" secondAttribute="top" id="sAC-WG-xYf"/>
+                            <constraint firstItem="pnx-WB-9Zg" firstAttribute="leading" secondItem="u98-V8-5tY" secondAttribute="leading" id="syl-gk-pcD"/>
+                            <constraint firstAttribute="trailing" secondItem="YcT-9L-MnY" secondAttribute="trailing" constant="12" id="yBE-pE-0Km"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="243 cars are live right now. Locate them." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUJ-AU-mmW">
+                        <rect key="frame" x="2" y="239" width="350" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="chs-ae-HjP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Nexa-Bold" family="Nexa" pointSize="12"/>
+                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xUJ-AU-mmW" firstAttribute="trailing" secondItem="klT-Ww-ku1" secondAttribute="trailing" id="9EQ-SZ-17Q"/>
+                <constraint firstItem="xUJ-AU-mmW" firstAttribute="leading" secondItem="klT-Ww-ku1" secondAttribute="leading" id="CTc-gJ-OCr"/>
+                <constraint firstItem="u98-V8-5tY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="GHx-yx-LKo"/>
+                <constraint firstAttribute="bottom" secondItem="xUJ-AU-mmW" secondAttribute="bottom" constant="8" id="IXH-GT-4OT"/>
+                <constraint firstItem="xUJ-AU-mmW" firstAttribute="top" secondItem="u98-V8-5tY" secondAttribute="bottom" constant="8" id="Lw6-qY-rgm"/>
+                <constraint firstItem="u98-V8-5tY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="nVH-Kv-kcl"/>
+                <constraint firstAttribute="trailing" secondItem="u98-V8-5tY" secondAttribute="trailing" constant="2" id="qC3-0V-4fJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="354" height="271"/>
+            <connections>
+                <outlet property="imageViewBeaconConnected" destination="Rql-oS-7nh" id="NH7-yz-igB"/>
+                <outlet property="imageViewCarOrBrand" destination="klT-Ww-ku1" id="0bm-6n-w0I"/>
+                <outlet property="imageViewSelecteditem" destination="YcT-9L-MnY" id="RtV-3q-Rkf"/>
+                <outlet property="lblName" destination="xUJ-AU-mmW" id="Pb8-16-NzZ"/>
+                <outlet property="viewTransparency" destination="pnx-WB-9Zg" id="TP6-Sq-meb"/>
+            </connections>
+            <point key="canvasLocation" x="273.60000000000002" y="173.16341829085459"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_beacon" width="48" height="48"/>
+        <image name="ic_selected_white" width="22" height="22"/>
+    </resources>
+</document>
